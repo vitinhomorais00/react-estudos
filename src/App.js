@@ -25,6 +25,7 @@ class App extends Component {
   render() {
     const { posts } = this.state;
 
+    // Always use map, you can use key in root element to identify the items
     return (
       <div className="App">
         {posts.map(post => (
