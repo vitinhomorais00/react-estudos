@@ -28,10 +28,12 @@ class App extends Component {
     this.handleTimeout();
   }
 
+  // Recebe parametros que pode ser importante ao longo do ciclo de vida do componente
   componentDidUpdate() {
     this.handleTimeout();
   }
 
+  // Component será desmontado
   componentWillUnmount() {
     clearTimeout(this.timeoutUpdate);
   }
