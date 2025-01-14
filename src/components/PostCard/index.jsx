@@ -1,9 +1,12 @@
-import { PostImage } from '../PostImage';
-import { PostContent } from '../PostContent';
+import './styles.css';
 
 export const PostCard = ({ title, cover, body, id }) => (
-    <div className="post">
-        <PostImage title={title} cover={cover} />
-        <PostContent id={id} title={title} body={body} />
+  <div className="post">
+    <img src={cover} alt={title} />
+    <div className="post-content">
+      <h2>{title}</h2>
+      <h2>{title} {id}</h2>
+      <p>{body}</p>
     </div>
+  </div>
 );
